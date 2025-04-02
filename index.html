@@ -212,6 +212,26 @@
     /* Добавяне на анимация*
 <h1 class="fade-in">Моите любими активности</h1>
 <div class="card slide-up">...</div>
+   /* Анимация за плавно появяване на елементите */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 2s ease-out;
+}
+
+/* Анимация за излизане на елементи */
+@keyframes slideUp {
+  0% { transform: translateY(100px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+.slide-up {
+  animation: slideUp 1s ease-out;
+}
+
 
 
 
